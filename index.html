@@ -60,7 +60,7 @@
 <body>
   <div class="wrap">
     <h1>隐私政策 / Privacy Policy</h1>
-    <p class="meta">生效日期 / Effective: 2026-11-05 &nbsp;·&nbsp; 最后更新 / Updated: 2026-11-12</p>
+    <p class="meta">生效日期 / Effective: 2026-11-05 &nbsp;·&nbsp; 最后更新 / Updated: 2026-11-14</p>
 
     <section>
       <h2>一、概述 / 1. Overview</h2>
@@ -72,17 +72,17 @@
     <section>
       <h2>二、我们收集的信息 / 2. Information We Collect</h2>
       <ul>
-        <li><b>1. 录音数据：</b>仅在您主动开始跟读练习时实时采集麦克风音频。音频仅在内存中用于实时分析，分析完成后立即释放，不保存、不上传。</li>
-        <li><b>2. 设备标识：</b>为核验口语教学授权，本应用会读取系统提供的应用级设备标识（iOS 为 identifierForVendor，Android 为 ANDROID_ID）；若系统未提供，则在本机随机生成一个标识。该标识仅保存在本机，用于与授权白名单比对，不会自动上传至服务器；仅当您主动复制设备 ID 并报备给我们时，才会由您本人提供给我们用于授权审核。</li>
+        <li><b>1. 音频数据：</b>仅在您主动开始跟读练习时实时采集麦克风音频。音频仅在内存中用于实时分析，分析完成后立即释放，不保存、不上传。</li>
+        <li><b>2. 设备标识：</b>为核验口语教学授权，本应用会读取系统提供的应用级设备标识（iOS 为 identifierForVendor，Android 为 ANDROID_ID）；若系统未提供，则在本机随机生成一个标识。该标识平时仅保存在本机，用于与授权白名单比对；当您参与云端排行榜或领取排行榜奖励时，本应用会将设备标识与您的排行榜匿名 ID 一并上传至我们的云端服务器，仅用于将排行榜名次与您的设备关联，以便向您的设备发放会员奖励。除上述情形外，该标识不会上传，也不会提供给任何第三方。此外，您主动复制设备 ID 并报备给我们时，由您本人提供该标识用于授权审核。</li>
         <li><b>3. 应用运行日志：</b>仅用于排查程序崩溃问题，不用于广告推送。</li>
-        <li><b>4. 我们不会收集：</b>通讯录、精确位置、短信、通话记录、健康数据、已安装应用列表等。本应用不会批量访问或上传您的相册；仅在您主动更换排行榜头像时，读取您所选中的那一张图片，该图片仅保存在本机，不会上传。</li>
+        <li><b>4. 我们不会收集：</b>通讯录、精确位置、短信、通话记录、健康数据、已安装应用列表等。排行榜头像由系统在本地派生 Emoji 表情表示，本应用不会访问或上传您的相册，也不需要相机权限。</li>
       </ul>
       <div class="divider"></div>
       <ul class="en">
         <li>1. Audio recordings: Microphone audio is captured in real time only when you start a shadowing practice. The audio is held in memory solely for real-time analysis and is released immediately once analysis completes — never saved, never uploaded.</li>
-        <li>2. Device identifier: To validate spoken-language teaching authorization, the App reads the app-scoped device identifier provided by the system (identifierForVendor on iOS, ANDROID_ID on Android); if the system does not provide one, an identifier is generated locally at random. It is stored on-device only and compared against an authorization whitelist; it is never uploaded automatically. Only when you voluntarily copy and report the Device ID do you provide it to us for authorization review.</li>
+        <li>2. Device identifier: To validate spoken-language teaching authorization, the App reads the app-scoped device identifier provided by the system (identifierForVendor on iOS, ANDROID_ID on Android); if the system does not provide one, an identifier is generated locally at random. The identifier normally stays on your device and is compared against an authorization whitelist. When you take part in the cloud leaderboard or claim leaderboard rewards, the App uploads the device identifier together with your anonymous leaderboard ID to our cloud server, solely to associate your leaderboard rank with your device so that membership rewards can be granted to that device. Apart from these cases the identifier is not uploaded and is not shared with any third party. In addition, when you voluntarily copy and report the Device ID, you provide it to us for authorization review.</li>
         <li>3. App logs: Used only to diagnose crashes. Not used for advertising.</li>
-        <li>4. We do NOT collect: contacts, precise location, SMS, call logs, health data, or the list of installed apps. The App does not access or upload your photo library in bulk; only when you actively change your leaderboard avatar does it read the single image you selected, and that image is stored locally and never uploaded.</li>
+        <li>4. We do NOT collect: contacts, precise location, SMS, call logs, health data, or the list of installed apps. The leaderboard avatar is a locally generated Emoji; the App does not access or upload your photo library and requests no camera permission.</li>
       </ul>
     </section>
 
@@ -90,66 +90,64 @@
       <h2>三、信息用途 / 3. Use of Information</h2>
       <ul>
         <li>本地音频：用于实时语音识别、语速、停顿、口头禅与音量分析；</li>
-        <li>设备标识：仅在本机与授权白名单比对（标识由系统提供或本机生成），用于校验口语教学授权与会员权益有效性，不上传服务器；</li>
+        <li>设备标识：在本机与授权白名单比对，用于校验口语教学授权与会员权益有效性；当您参与云端排行榜或领取排行榜奖励时，该标识与排行榜匿名 ID 一并上传，仅用于关联排行榜名次与会员权益发放，不用于广告投放或用户画像；</li>
         <li>日志：用于修复缺陷、优化产品。</li>
       </ul>
       <div class="divider"></div>
       <ul class="en">
         <li>Local audio: Used for on-device speech recognition and analysis of speaking rate, pauses, filler words and volume.</li>
-        <li>Device ID: Compared on-device only against the authorization whitelist (the identifier is provided by the system or generated locally) to validate spoken-language teaching authorization and membership entitlements; never uploaded.</li>
+        <li>Device ID: Compared on-device against the authorization whitelist (the identifier is provided by the system or generated locally) to validate spoken-language teaching authorization and membership entitlements. When you take part in the cloud leaderboard or claim leaderboard rewards, it is uploaded together with your anonymous leaderboard ID, solely to associate your leaderboard rank with membership reward issuance; it is never used for advertising or profiling.</li>
         <li>Logs: Used to fix bugs and improve the product.</li>
       </ul>
     </section>
 
     <section>
       <h2>四、信息共享 / 4. Information Sharing</h2>
-      <p>我们不会向任何第三方出售、出租或交易您的个人信息。本应用实际涉及的信息范围有限，仅包括：设备标识（仅在本机用于口语教学授权核验）、本地练习数据（评分与积分记录，仅存于本机）、排行榜昵称与头像选择（仅存于本机）。上述信息均不会自动上传至我们的服务器。除法律法规明确要求、或经有权机关依法调取外，我们不会向任何第三方披露上述信息。</p>
+      <p>我们不会向任何第三方出售、出租或交易您的个人信息。本应用实际涉及的信息范围有限，仅包括：设备标识（在本机用于口语教学授权核验；参与排行榜或领取奖励时与排行榜匿名 ID 一并上传用于会员权益关联）、本地练习数据（评分与积分记录，仅存于本机）。当您参与云端排行榜时，我们会将匿名 ID、您设置的昵称、Emoji 头像、当月积分以及用于关联会员权益的设备标识上传至我们的云端服务器用于榜单展示、排名计算与奖励发放。该匿名 ID 由系统在本机随机生成，不包含您的真实姓名、联系方式、音频或精确位置；本应用也不会收集您的通讯录、短信等敏感信息。除法律法规明确要求、或经有权机关依法调取外，我们不会向任何第三方披露上述信息。</p>
       <div class="divider"></div>
-      <p class="en">We do not sell, rent or trade your personal data with any third party. The information involved in this App is limited to: the device identifier (used on-device only to validate spoken-language teaching authorization), local practice data (scores and points, stored on-device only), and your leaderboard nickname and avatar selection (stored on-device only). None of this information is uploaded automatically to our servers. We disclose it to third parties only when required by applicable law or by a competent authority in accordance with legal process.</p>
+      <p class="en">We do not sell, rent or trade your personal data with any third party. The information involved in this App is limited to: the device identifier (used on-device to validate spoken-language teaching authorization, and uploaded together with the anonymous leaderboard ID when you take part in the leaderboard or claim rewards, for membership entitlement association) and local practice data (scores and points, stored on-device only). When you take part in the cloud leaderboard, we upload an anonymous ID, the nickname you set, an emoji avatar, your monthly points and the device identifier used to associate membership entitlements to our cloud server for leaderboard display, ranking and reward issuance. The anonymous ID is generated randomly on your device and does not contain your real name, contact information, audio or precise location. The App does not collect your contacts, SMS or other sensitive information. We disclose this information to third parties only when required by applicable law or by a competent authority in accordance with legal process.</p>
     </section>
 
     <section>
       <h2>五、数据存储与删除 / 5. Data Storage &amp; Deletion</h2>
-      <p>本应用不保存任何录音文件，音频在实时分析完成后立即释放。我们的服务器不存储您的语音录音。排行榜头像图片与本地练习数据（评分记录等）保留在您的设备上，直至您在应用内删除或卸载应用；卸载应用会清除全部本地相关数据。</p>
+      <p>本应用不保存任何音频文件，音频在实时分析完成后立即释放。我们的服务器不存储您的音频数据。排行榜头像为应用在本地生成的 Emoji 表情，不包含也不会访问您的照片；本地练习数据（评分记录等）保留在您的设备上，直至您在应用内删除或卸载应用。当您参与云端排行榜时，仅将匿名 ID、昵称、Emoji 头像、当月积分与用于关联会员权益的设备标识上传至云端，用于榜单展示、排名与奖励发放；这些数据不含您的姓名、联系方式、音频或精确位置。云端奖励记录（名次、奖励天数、领取状态）与设备标识的绑定关系会保留在服务器上，以便跨设备结算会员奖励。您可随时在应用内停止参与排行榜，之后新的成绩将不再上传；如需处理云端已有的榜单数据与设备标识绑定记录，可联系我们协助，我们将在核实后按您的请求删除。</p>
       <div class="divider"></div>
-      <p class="en">The App does not save any audio recordings; audio is released immediately after real-time analysis. No voice recordings are stored on our servers. Leaderboard avatar images and local practice data (such as score records) remain on your device until you delete them in the App or uninstall the App; uninstalling removes all related local data.</p>
+      <p class="en">The App does not save any audio files; audio is released immediately after real-time analysis. No audio data is stored on our servers. The leaderboard avatar is an Emoji generated locally by the App and does not contain or access any of your photos. Local practice data (such as score records) remain on your device until you delete them in the App or uninstall the App. When you take part in the cloud leaderboard, only your anonymous ID, nickname, emoji avatar, monthly points and the device identifier used to associate membership entitlements are uploaded to the cloud, for leaderboard display, ranking and reward issuance; these data do not contain your real name, contact information, audio or precise location. Cloud reward records (rank, reward days, claim status) and their binding to the device identifier are retained on our servers so that membership rewards can be settled across devices. You may stop taking part in the leaderboard at any time in the App; once you do, new results are no longer uploaded. If you need us to delete cloud-stored leaderboard data or device-identifier bindings, you may contact us and we will assist upon verification.</p>
     </section>
 
     <section>
       <h2>六、权限说明 / 6. Permissions</h2>
       <p>麦克风：仅用于跟读练习时实时采集发音并在本机分析，音频不保存；无此权限将无法使用跟读功能。<br>
-         相册：仅在您主动更换排行榜头像时用于选择一张图片，图片仅保存在本机，不会上传。<br>
-         相机：仅在选择头像时可能用于拍照，照片仅保存在本机，不会上传。<br>
-         语音识别：用于将您的跟读发音识别为文字以完成逐词评分，识别在设备本地完成，录音与识别结果均不上传。<br>
+         语音识别：用于将您的跟读发音识别为文字以完成逐词评分，识别在设备本地完成，音频与识别结果均不上传。<br>
          通知：仅用于练习提醒与下载进度提示，可在系统设置中关闭。<br>
          前台服务与后台播放：用于听力练习时后台持续播放音频，避免切出后声音中断。<br>
-         本应用不会请求通讯录、精确位置等非必要权限。</p>
+         排行榜头像由系统在本地生成 Emoji 表情表示，不读取相册，也不需要相机权限；本应用不会请求通讯录、精确位置等非必要权限。</p>
       <div class="divider"></div>
       <p class="en">Microphone: Used only to capture your pronunciation in real time for on-device analysis during shadowing practice; audio is never saved. Practice features cannot work without it.<br>
-         Photos: Used only to select a single image when you actively change your leaderboard avatar; the image is stored locally and never uploaded.<br>
-         Camera: May be used only to take a photo when setting your avatar; the photo is stored locally and never uploaded.<br>
          Speech recognition: Used to transcribe your shadowing pronunciation into text for word-by-word scoring. Recognition runs on-device; neither the audio nor the recognition results are uploaded.<br>
          Notifications: Used only for practice reminders and download progress. You can disable them in system settings.<br>
          Foreground service and background playback: Used to keep audio playing in the background during listening practice, so sound is not interrupted when you switch away from the App.<br>
-         The App does not request unnecessary permissions such as contacts or precise location.</p>
+         The leaderboard avatar is generated locally as an Emoji and never reads your photo library; no camera permission is requested. The App does not request unnecessary permissions such as contacts or precise location.</p>
     </section>
 
     <section>
       <h2>七、第三方服务 / 7. Third-Party Services</h2>
       <ul>
-        <li>应用商店结算服务（Apple App Store）：用于处理订阅购买与续订。支付信息由 Apple 直接处理，开发者无法获取您的银行卡号或账单地址。</li>
-        <li>内容分发网络（CDN）：用于下载语音识别模型与练习内容数据包，为公开只读的资源获取，不携带您的个人信息、录音或设备标识。</li>
+        <li>应用商店结算服务（Google Play / Apple App Store）：用于处理订阅购买与续订。Android 版通过 Google Play 结算，iOS 版通过 Apple App Store 结算。支付信息由对应商店直接处理，开发者无法获取您的银行卡号或账单地址。</li>
+        <li>内容分发网络（CDN）：用于下载语音识别模型与练习内容数据包，为公开只读的资源获取，不携带您的个人信息、音频或设备标识。</li>
+        <li>云端排行榜与奖励存储（Cloudflare D1 数据库）：当您参与云端排行榜或领取排行榜奖励时，存储您上传的匿名 ID、昵称、Emoji 头像、当月积分，以及用于关联会员权益的设备标识与奖励发放记录（名次、奖励天数、领取状态），用于榜单展示、排名计算与会员奖励结算，不存储您的任何音频。该等数据处理遵循 Cloudflare 的隐私政策。</li>
         <li>本地语音识别引擎（Vosk）：完全在您的设备上离线运行，音频不会离开设备。</li>
         <li>设备信息（device_info_plus）：仅读取设备型号与系统版本，用于适配界面布局，不收集个人身份信息。</li>
         <li>网络状态检测（connectivity_plus）：仅判断是否有网络连接，不记录网络内容。</li>
         <li>本地存储（sqflite / shared_preferences）：练习记录与设置保存在本机，不上传服务器。</li>
-        <li>音频播放与录音（audioplayers / record / flutter_tts）：均在本地完成，音频不上传。</li>
+        <li>音频播放与采集（audioplayers / record / flutter_tts）：均在本地完成，音频不上传。</li>
         <li>文件选择与分享（file_picker / share_plus）：仅在您主动导入语音包、更换头像或分享打卡成果时触发，所选文件仅在本机处理，不上传服务器。</li>
       </ul>
       <div class="divider"></div>
       <ul class="en">
-        <li>App Store Billing: Processes subscription purchases and renewals. Payment information is handled directly by Apple; the developer never receives your card number or billing address.</li>
-        <li>Content Delivery Network (CDN): Used to download speech-recognition models and practice content packages. These are public read-only resource requests and carry no personal information, recordings, or device identifiers.</li>
+        <li>App Store Billing (Google Play / Apple App Store): Processes subscription purchases and renewals. The Android version uses Google Play Billing; the iOS version uses Apple's In-App Purchase. Payment information is handled directly by the corresponding store; the developer never receives your card number or billing address.</li>
+        <li>Content Delivery Network (CDN): Used to download speech-recognition models and practice content packages. These are public read-only resource requests and carry no personal information, audio, or device identifiers.</li>
+        <li>Cloud leaderboard and reward storage (Cloudflare D1 database): When you take part in the cloud leaderboard or claim leaderboard rewards, we store the anonymous ID, nickname, emoji avatar and monthly points you upload, as well as the device identifier used to associate membership entitlements and the reward records (rank, reward days, claim status), for leaderboard display, ranking and membership reward settlement. No audio is stored. This processing is subject to Cloudflare's privacy policy.</li>
         <li>On-device speech recognition (Vosk): Runs entirely offline on your device. Audio never leaves the device.</li>
         <li>Device information (device_info_plus): Reads only the device model and OS version to adapt the interface layout; it does not collect personal identity information.</li>
         <li>Network connectivity (connectivity_plus): Determines only whether a network connection exists; it does not record network content.</li>
@@ -161,16 +159,16 @@
 
     <section>
       <h2>八、儿童隐私 / 8. Children's Privacy</h2>
-      <p>本应用不面向 13 周岁以下儿童，也不会主动收集儿童的个人信息。若您是家长或监护人，发现孩子在未经您同意的情况下使用了本应用，请联系我们，我们会在核实后删除相关数据。</p>
+      <p>本应用不面向 13 周岁以下儿童，也不会主动收集儿童的个人信息。本应用不保存音频，本地练习数据实时在设备端处理；云端排行榜仅涉及匿名 ID、昵称、Emoji 头像、当月积分，以及用于关联会员权益的设备标识与奖励发放记录，不包含儿童的身份信息、照片或音频。若您是家长或监护人，发现孩子在未经您同意的情况下使用了本应用，可联系我们说明情况，我们会尽力协助处理并回应您的关切。</p>
       <div class="divider"></div>
-      <p class="en">The App is not directed to children under 13 and does not knowingly collect personal information from children. If you are a parent or guardian and believe a child has used the App without your consent, please contact us and we will delete the relevant data after verification.</p>
+      <p class="en">The App is not directed to children under 13 and does not knowingly collect personal information from children. The App does not save audio, and local practice data is processed on-device in real time. The cloud leaderboard involves only the anonymous ID, nickname, emoji avatar, monthly points, and the device identifier and reward records used to associate membership entitlements; it does not contain children's identity information, photos or audio. If you are a parent or guardian and believe a child has used the App without your consent, please contact us to describe the situation and we will do our best to assist and respond to your concerns.</p>
     </section>
 
     <section>
       <h2>九、您的权利 / 9. Your Rights</h2>
-      <p>您有权删除本地练习数据与排行榜头像图片；有权停止使用本应用；有权就本政策向我们提出疑问或投诉。由于我们不集中存储您的个人数据，多数情况下删除操作可直接在您的设备上完成。</p>
+      <p>您有权删除本地练习数据与头像设置；有权停止使用本应用；有权就本政策向我们提出疑问或投诉。本地练习数据的删除可直接在您的设备上完成；云端仅保存排行榜匿名数据与用于关联会员权益的设备标识，您可通过本政策末尾的联系方式请求删除，我们将在核实后处理。</p>
       <div class="divider"></div>
-      <p class="en">You have the right to delete your local practice data and leaderboard avatar images, to stop using the App, and to raise questions or complaints about this Policy. Because we do not centrally store your personal data, most deletion operations can be completed directly on your device.</p>
+      <p class="en">You have the right to delete your local practice data and avatar settings, to stop using the App, and to raise questions or complaints about this Policy. Local practice data can be deleted directly on your device; our servers only retain anonymous leaderboard data and the device identifier used to associate membership entitlements, which you may request us to delete via the contact details at the end of this Policy, and we will handle it upon verification.</p>
     </section>
 
     <section>
