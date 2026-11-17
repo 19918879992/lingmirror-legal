@@ -63,9 +63,9 @@
     <p class="meta">生效日期 / Effective: 2026-11-05 &nbsp;&middot;&nbsp; 最后更新 / Updated: 2026-11-15</p>
     <section>
       <h2>一、概述 / 1. Overview</h2>
-      <p>本隐私政策说明 LingMirror（以下简称"本应用"）如何收集、使用、存储您的信息。本应用的核心语音分析与练习数据均在本地完成，已尽可能减少个人数据上传。Android 版语音识别使用本地离线引擎；iOS 版使用系统语音识别服务，详见第六节。</p>
+      <p>本隐私政策说明 LingMirror（以下简称"本应用"）如何收集、使用、存储您的信息。本应用的核心语音分析与练习数据均在本地完成，已尽可能减少个人数据上传。Android 版与 iOS 版语音识别均使用本地离线引擎（Vosk），详见第六节。</p>
       <div class="divider"></div>
-      <p>This Privacy Policy describes how LingMirror (the "App") collects, uses and stores your information. The App performs its core speech analysis and practice-data processing on-device, and has minimized personal data uploads as far as possible. The Android version uses an on-device offline speech-recognition engine; the iOS version uses the system speech recognition service, as described in Section 6.</p>
+      <p>This Privacy Policy describes how LingMirror (the "App") collects, uses and stores your information. The App performs its core speech analysis and practice-data processing on-device, and has minimized personal data uploads as far as possible. Both the Android and iOS versions use an on-device offline speech-recognition engine (Vosk), as described in Section 6.</p>
     </section>
 
     <section>
@@ -113,14 +113,14 @@
     <section>
       <h2>六、权限说明 / 6. Permissions</h2>
       <p>麦克风：仅用于跟读练习时实时采集发音并在本机分析，音频不保存；无此权限将无法使用跟读功能。</p>
-      <p>语音识别：用于将您的跟读发音识别为文字以完成逐词评分。Android 版使用本地离线识别引擎（Vosk），音频与识别结果均不上传；iOS 版使用系统语音识别服务，可能由操作系统按其自身策略处理（部分机型或语种下可能调用系统服务），本应用自身不向任何服务器上传音频或识别结果。音频可能会被发送至 Apple 服务器进行识别，具体处理方式遵循 Apple 的隐私政策。</p>
+      <p>语音识别：用于将您的跟读发音识别为文字以完成逐词评分。Android 版与 iOS 版均使用本地离线识别引擎（Vosk），音频与识别结果均不上传。</p>
       <p>通知：仅用于听力练习时前台服务所需的常驻通知，可在系统设置中关闭。</p>
       <p>前台服务与后台播放：用于听力练习时后台持续播放音频，避免切出后声音中断。</p>
       <p>排行榜头像由系统在本地生成 Emoji 表情表示，不读取相册，也不需要相机权限。</p>
       <p>本应用不会请求通讯录、精确位置等非必要权限。</p>
       <div class="divider"></div>
       <p>Microphone: Used only to capture your pronunciation in real time for on-device analysis during shadowing practice; audio is never saved. Practice features cannot work without it.</p>
-      <p>Speech recognition: Used to transcribe your shadowing pronunciation into text for word-by-word scoring. The Android version uses an on-device offline recognition engine (Vosk); neither the audio nor the recognition results are uploaded. The iOS version uses the system speech recognition service, which may be handled by the operating system under its own policies (system services may be invoked on some devices or for some languages); the App itself never uploads audio or recognition results to any server. Audio may be sent to Apple's servers for recognition, subject to Apple's privacy policy.</p>
+      <p>Speech recognition: Used to transcribe your shadowing pronunciation into text for word-by-word scoring. Both the Android and iOS versions use an on-device offline recognition engine (Vosk); neither the audio nor the recognition results are uploaded.</p>
       <p>Notifications: Used only for the persistent notification required by the foreground service during listening practice. You can disable them in system settings.</p>
       <p>Foreground service and background playback: Used to keep audio playing in the background during listening practice, so sound is not interrupted when you switch away from the App.</p>
       <p>The leaderboard avatar is generated locally as an Emoji and never reads your photo library; no camera permission is requested.</p>
@@ -133,7 +133,7 @@
       <p>应用商店结算服务：用于处理会员/订阅的购买与续订。iOS 版通过 Apple App Store 结算；如后续通过 Google Play 分发的版本，则通过 Google Play 结算。支付信息由对应商店直接处理，开发者无法获取您的银行卡号或账单地址。</p>
       <p>内容分发网络（CDN）：用于下载语音识别模型与练习内容数据包。下载请求为公开只读的资源获取，不携带您的个人信息、音频或设备标识。</p>
       <p>云端排行榜与奖励存储（Cloudflare D1 数据库）：当您参与云端排行榜或领取排行榜奖励时，存储您上传的匿名 ID、昵称、Emoji 头像、当周积分，以及用于关联会员权益的设备标识与奖励发放记录（名次、奖励天数、领取状态），用于榜单展示、排名计算与会员奖励结算，不存储您的任何音频。该等数据处理遵循 Cloudflare 的隐私政策。</p>
-      <p>本地语音识别引擎（Vosk）：Android 版完全在您的设备上离线运行，音频不会离开设备。iOS 版使用系统语音识别服务（speech_to_text），由操作系统按其自身隐私策略处理，本应用不向自有服务器上传音频或识别结果。</p>
+      <p>本地语音识别引擎（Vosk）：Android 版与 iOS 版均完全在您的设备上离线运行，音频不会离开设备。本应用不向自有服务器上传音频或识别结果。</p>
       <p>屏幕常亮（wakelock_plus）：仅在跟读页面保持屏幕不自动熄灭，离开页面即恢复，不收集任何信息。</p>
       <p>设备信息（device_info_plus）：仅读取设备型号与系统版本，用于适配界面布局，不收集个人身份信息。</p>
       <p>网络状态检测（connectivity_plus）：仅判断是否有网络连接，不记录网络内容。</p>
@@ -145,7 +145,7 @@
       <p>App Store Billing: Processes membership/subscription purchases and renewals. The iOS version is billed through Apple's App Store; any future version distributed via Google Play would be billed through Google Play. Payment information is handled directly by the corresponding store; the developer never receives your card number or billing address.</p>
       <p>Content Delivery Network (CDN): Used to download speech-recognition models and practice content packages. These are public read-only resource requests and carry no personal information, audio, or device identifiers.</p>
       <p>Cloud leaderboard and reward storage (Cloudflare D1 database): When you take part in the cloud leaderboard or claim leaderboard rewards, we store the anonymous ID, nickname, emoji avatar and weekly points you upload, as well as the device identifier used to associate membership entitlements and the reward records (rank, reward days, claim status), for leaderboard display, ranking and membership reward settlement. No audio is stored. This processing is subject to Cloudflare's privacy policy.</p>
-      <p>On-device speech recognition (Vosk): The Android version runs entirely offline on your device; audio never leaves the device. The iOS version uses the system speech recognition service (speech_to_text), handled by the operating system under its own privacy policies; the App never uploads audio or recognition results to its own servers.</p>
+      <p>On-device speech recognition (Vosk): Both the Android and iOS versions run entirely offline on your device; audio never leaves the device. The App never uploads audio or recognition results to its own servers.</p>
       <p>Screen wake lock (wakelock_plus): Keeps the screen from sleeping only on the shadowing page and restores it when leaving; it collects no information.</p>
       <p>Device information (device_info_plus): Reads only the device model and OS version to adapt the interface layout; it does not collect personal identity information.</p>
       <p>Network connectivity (connectivity_plus): Determines only whether a network connection exists; it does not record network content.</p>
