@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="format-detection" content="telephone=no">
-  <title>闅愮鏀跨瓥 / Privacy Policy</title>
+  <title>LingMirror 隐私政策 / 用户协议 / 商用授权</title>
   <style>
     :root {
       --bg: #f7f7f5;
@@ -38,6 +38,27 @@
       font-size: 13px;
       margin-bottom: 24px;
     }
+    nav.docnav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+    nav.docnav a {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--card);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    nav.docnav a:hover { background: #eef4f0; }
+    .doc { scroll-margin-top: 16px; }
+    .doc + .doc { margin-top: 40px; }
     section {
       background: var(--card);
       border: 1px solid var(--line);
@@ -55,145 +76,307 @@
     ul { padding-left: 20px; }
     li { margin-bottom: 6px; }
     .divider { height: 1px; background: var(--line); margin: 12px 0; }
+    .sub { font-size: 14px; font-weight: 700; margin: 10px 0 4px; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>隐私政策 / Privacy Policy</h1>
-    <p class="meta">生效日期 / Effective: 2026-11-05 &nbsp;&middot;&nbsp; 最后更新 / Updated: 2026-11-17</p>
-    <section>
-      <h2>一、概述 / 1. Overview</h2>
-      <p>本隐私政策说明 LingMirror（以下简称"本应用"）如何收集、使用、存储您的信息。本应用的核心语音分析与练习数据均在本地完成，已尽可能减少个人数据上传。Android 版与 iOS 版语音识别均使用本地离线引擎（Vosk），详见第六节。</p>
-      <div class="divider"></div>
-      <p>This Privacy Policy describes how LingMirror (the "App") collects, uses and stores your information. The App performs its core speech analysis and practice-data processing on-device, and has minimized personal data uploads as far as possible. Both the Android and iOS versions use an on-device offline speech-recognition engine (Vosk), as described in Section 6.</p>
-    </section>
+    <nav class="docnav">
+      <a href="#privacy">隐私政策 / Privacy Policy</a>
+      <a href="#agreement">用户协议 / User Agreement</a>
+      <a href="#commercial">商用授权 / Commercial Licensing</a>
+    </nav>
 
-    <section>
-      <h2>二、我们收集的信息 / 2. Information We Collect</h2>
-      <ul>
-        <li><b>1. 音频数据：</b>仅在您主动开始跟读练习时实时采集麦克风音频。音频仅在内存中用于实时分析，分析完成后立即释放，不保存为文件，也不会自动上传至服务器。</li>
-        <li><b>2. 设备标识：</b>为核验会员权益有效性，本应用会读取系统提供的应用级设备标识（iOS 为 identifierForVendor，Android 为 ANDROID_ID）；若系统未提供，则在本机随机生成一个标识。该标识平时仅保存在本机，用于在本机校验会员状态；当您参与云端排行榜或领取排行榜奖励时，本应用会将设备标识与您的排行榜匿名 ID 一并上传至我们的云端服务器，仅用于将排行榜名次与您的设备关联，以便向您的设备发放会员奖励。除上述情形外，该标识不会上传，也不会提供给任何第三方。此外，您主动复制设备 ID 并报备给我们时，由您本人提供该标识用于会员权益核验。</li>
-        <li><b>3. 应用运行日志：</b>仅用于排查程序崩溃问题，不用于广告推送。</li>
-        <li><b>4. 我们不会收集：</b>通讯录、精确位置、短信、通话记录、健康数据、已安装应用列表等。排行榜头像由系统在本地派生 Emoji 表情表示，本应用不会访问或上传您的相册，也不需要相机权限。</li>
-      </ul>
-      <div class="divider"></div>
-      <ul class="en">
-        <li><b>1. Audio data:</b> Microphone audio is captured in real time only when you start a shadowing practice. The audio is held in memory solely for real-time analysis, released immediately once analysis completes, never saved as a file, and never automatically uploaded to any server.</li>
-        <li><b>2. Device identifier:</b> To validate membership entitlements, the App reads the app-scoped device identifier provided by the system (identifierForVendor on iOS, ANDROID_ID on Android); if the system does not provide one, an identifier is generated locally at random. The identifier normally stays on your device and is compared locally to validate membership status. When you take part in the cloud leaderboard or claim leaderboard rewards, the App uploads the device identifier together with your anonymous leaderboard ID to our cloud server, solely to associate your leaderboard rank with your device so that membership rewards can be granted to that device. Apart from these cases the identifier is not uploaded and is not shared with any third party. In addition, when you voluntarily copy and report the Device ID, you provide it to us for membership verification.</li>
-        <li><b>3. App logs:</b> Used only to diagnose crashes. Not used for advertising.</li>
-        <li><b>4. We do NOT collect:</b> contacts, precise location, SMS, call logs, health data, or the list of installed apps. The leaderboard avatar is a locally generated Emoji; the App does not access or upload your photo library and requests no camera permission.</li>
-      </ul>
-    </section>
+    <!-- ================= 隐私政策 / Privacy Policy ================= -->
+    <div class="doc" id="privacy">
+      <h1>隐私政策 / Privacy Policy</h1>
+      <p class="meta">生效日期 / Effective: 2026-11-05 &nbsp;&middot;&nbsp; 最后更新 / Updated: 2026-11-17</p>
 
-    <section>
-      <h2>三、信息用途 / 3. Use of Information</h2>
-      <p>本地音频：用于实时语音识别、语速、停顿、口头禅与音量分析；</p>
-      <p>设备标识：在本机校验会员状态，用于核验会员权益有效性；当您参与云端排行榜或领取排行榜奖励时，该标识与排行榜匿名 ID 一并上传，仅用于关联排行榜名次与会员权益发放，不用于广告投放或用户画像；</p>
-      <p>日志：用于修复缺陷、优化产品。</p>
-      <div class="divider"></div>
-      <p>Local audio: Used for on-device speech recognition and analysis of speaking rate, pauses, filler words and volume.</p>
-      <p>Device ID: Compared on-device locally to validate membership status and membership entitlements. When you take part in the cloud leaderboard or claim leaderboard rewards, it is uploaded together with your anonymous leaderboard ID, solely to associate your leaderboard rank with membership reward issuance; it is never used for advertising or profiling.</p>
-      <p>Logs: Used to fix bugs and improve the product.</p>
-    </section>
+      <section>
+        <h2>一、概述 / 1. Overview</h2>
+        <p>本隐私政策说明 LingMirror（以下简称"本应用"）如何收集、使用、存储您的信息。<b>本应用无需注册账号，不收集姓名、手机号、邮箱等注册信息。</b>本应用的核心语音分析与练习数据均在本地完成，已尽可能减少个人数据上传。Android 版与 iOS 版语音识别均使用本地离线引擎（Vosk），详见第六节。</p>
+        <div class="divider"></div>
+        <p>This Privacy Policy describes how LingMirror (the "App") collects, uses and stores your information. <b>The App requires no account registration and does not collect registration information such as your name, phone number or email address.</b> The App performs its core speech analysis and practice-data processing on-device, and has minimized personal data uploads as far as possible. Both the Android and iOS versions use an on-device offline speech-recognition engine (Vosk), as described in Section 6.</p>
+      </section>
 
-    <section>
-      <h2>四、信息共享 / 4. Information Sharing</h2>
-      <p>我们不会向任何第三方出售、出租或交易您的个人信息。本应用实际涉及的信息范围有限，仅包括：设备标识（在本机用于会员权益校验；参与排行榜或领取奖励时与排行榜匿名 ID 一并上传用于会员权益关联）、本地练习数据（评分与积分记录，仅存于本机）。当您参与云端排行榜时，我们会将匿名 ID、您设置的昵称、Emoji 头像、当周积分以及用于关联会员权益的设备标识上传至我们的云端服务器用于榜单展示、排名计算与奖励发放。该匿名 ID 由系统在本机随机生成，不包含您的真实姓名、联系方式、音频或精确位置；本应用也不会收集您的通讯录、短信等敏感信息。除法律法规明确要求、或经有权机关依法调取外，我们不会向任何第三方披露上述信息。</p>
-      <div class="divider"></div>
-      <p>We do not sell, rent or trade your personal data with any third party. The information involved in this App is limited to: the device identifier (used on-device to validate membership entitlements, and uploaded together with the anonymous leaderboard ID when you take part in the leaderboard or claim rewards, for membership entitlement association) and local practice data (scores and points, stored on-device only). When you take part in the cloud leaderboard, we upload an anonymous ID, the nickname you set, an emoji avatar, your weekly points and the device identifier used to associate membership entitlements to our cloud server for leaderboard display, ranking and reward issuance. The anonymous ID is generated randomly on your device and does not contain your real name, contact information, audio or precise location. The App does not collect your contacts, SMS or other sensitive information. We disclose this information to third parties only when required by applicable law or by a competent authority in accordance with legal process.</p>
-    </section>
+      <section>
+        <h2>二、我们收集的信息 / 2. Information We Collect</h2>
+        <ul>
+          <li><b>1. 音频数据：</b>仅在您主动开始跟读练习时实时采集麦克风音频。音频仅在内存中用于实时分析，分析完成后立即释放，不保存为文件，也不会自动上传至服务器。</li>
+          <li><b>2. 设备标识：</b>为核验会员权益有效性，本应用会读取系统提供的应用级设备标识（iOS 为 identifierForVendor，Android 为 ANDROID_ID）；若系统未提供，则在本机随机生成一个标识。该标识平时仅保存在本机，用于在本机校验会员状态；当您参与云端排行榜或领取排行榜奖励时，本应用会将设备标识与您的排行榜匿名 ID 一并上传至我们的云端服务器，仅用于将排行榜名次与您的设备关联，以便向您的设备发放会员奖励。除上述情形外，该标识不会上传，也不会提供给任何第三方。此外，您主动复制设备 ID 并报备给我们时，由您本人提供该标识用于会员权益核验。</li>
+          <li><b>3. 应用运行日志：</b>仅用于排查程序崩溃问题，不用于广告推送。</li>
+          <li><b>4. 我们不会收集：</b>通讯录、精确位置、短信、通话记录、健康数据、已安装应用列表等。排行榜头像由系统在本地派生 Emoji 表情表示，本应用不会访问或上传您的相册，也不需要相机权限。</li>
+        </ul>
+        <div class="divider"></div>
+        <ul class="en">
+          <li><b>1. Audio data:</b> Microphone audio is captured in real time only when you start a shadowing practice. The audio is held in memory solely for real-time analysis, released immediately once analysis completes, never saved as a file, and never automatically uploaded to any server.</li>
+          <li><b>2. Device identifier:</b> To validate membership entitlements, the App reads the app-scoped device identifier provided by the system (identifierForVendor on iOS, ANDROID_ID on Android); if the system does not provide one, an identifier is generated locally at random. The identifier normally stays on your device and is compared locally to validate membership status. When you take part in the cloud leaderboard or claim leaderboard rewards, the App uploads the device identifier together with your anonymous leaderboard ID to our cloud server, solely to associate your leaderboard rank with your device so that membership rewards can be granted to that device. Apart from these cases the identifier is not uploaded and is not shared with any third party. In addition, when you voluntarily copy and report the Device ID, you provide it to us for membership verification.</li>
+          <li><b>3. App logs:</b> Used only to diagnose crashes. Not used for advertising.</li>
+          <li><b>4. We do NOT collect:</b> contacts, precise location, SMS, call logs, health data, or the list of installed apps. The leaderboard avatar is a locally generated Emoji; the App does not access or upload your photo library and requests no camera permission.</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>五、数据存储与删除 / 5. Data Storage & Deletion</h2>
-      <p>本应用不保存任何音频文件，音频在实时分析完成后立即释放。我们的服务器不存储您的音频数据。排行榜头像为应用在本地生成的 Emoji 表情，不包含也不会访问您的照片；本地练习数据（评分记录等）保留在您的设备上，直至您在应用内删除或卸载应用。当您参与云端排行榜时，仅将匿名 ID、昵称、Emoji 头像、当周积分与用于关联会员权益的设备标识上传至云端，用于榜单展示、排名与奖励发放；这些数据不含您的姓名、联系方式、音频或精确位置。云端奖励记录（名次、奖励天数、领取状态）与设备标识的绑定关系会保留在服务器上，以便跨设备结算会员奖励。站内消息功能会按设备标识存储系统下发给您的消息标题、正文、阅读状态与创建时间，用于在应用内向您展示通知；您可在应用内「系统消息」页面自行删除单条消息或清空全部消息，删除后服务器不再保留该消息记录。您可随时在应用内停止参与排行榜，之后新的成绩将不再上传；如需处理云端已有的榜单数据与设备标识绑定记录，可联系我们协助，我们将在核实后按您的请求删除。</p>
-      <div class="divider"></div>
-      <p>The App does not save any audio files; audio is released immediately after real-time analysis. No audio data is stored on our servers. The leaderboard avatar is an Emoji generated locally by the App and does not contain or access any of your photos. Local practice data (such as score records) remain on your device until you delete them in the App or uninstall the App. When you take part in the cloud leaderboard, only your anonymous ID, nickname, emoji avatar, weekly points and the device identifier used to associate membership entitlements are uploaded to the cloud, for leaderboard display, ranking and reward issuance; these data do not contain your real name, contact information, audio or precise location. Cloud reward records (rank, reward days, claim status) and their binding to the device identifier are retained on our servers so that membership rewards can be settled across devices. The in-app messaging feature stores, keyed by device identifier, the titles, bodies, read status and creation time of system messages delivered to you, so that notifications can be shown inside the App; you may delete any single message or clear all messages in the App's "System Messages" page, after which the server no longer retains those message records. You may stop taking part in the leaderboard at any time in the App; once you do, new results are no longer uploaded. If you need us to delete cloud-stored leaderboard data or device-identifier bindings, you may contact us and we will assist upon verification.</p>
-    </section>
+      <section>
+        <h2>三、信息用途 / 3. Use of Information</h2>
+        <p>本地音频：用于实时语音识别、语速、停顿、口头禅与音量分析；</p>
+        <p>设备标识：在本机校验会员状态，用于核验会员权益有效性；当您参与云端排行榜或领取排行榜奖励时，该标识与排行榜匿名 ID 一并上传，仅用于关联排行榜名次与会员权益发放，不用于广告投放或用户画像；</p>
+        <p>日志：用于修复缺陷、优化产品。</p>
+        <div class="divider"></div>
+        <p>Local audio: Used for on-device speech recognition and analysis of speaking rate, pauses, filler words and volume.</p>
+        <p>Device ID: Compared on-device locally to validate membership status and membership entitlements. When you take part in the cloud leaderboard or claim leaderboard rewards, it is uploaded together with your anonymous leaderboard ID, solely to associate your leaderboard rank with membership reward issuance; it is never used for advertising or profiling.</p>
+        <p>Logs: Used to fix bugs and improve the product.</p>
+      </section>
 
-    <section>
-      <h2>六、权限说明 / 6. Permissions</h2>
-      <p>麦克风：仅用于跟读练习时实时采集发音并在本机分析，音频不保存；无此权限将无法使用跟读功能。</p>
-      <p>语音识别：用于将您的跟读发音识别为文字以完成逐词评分。Android 版与 iOS 版均使用本地离线识别引擎（Vosk），音频与识别结果均不上传。</p>
-      <p>通知：仅用于听力练习时前台服务所需的常驻通知，可在系统设置中关闭。</p>
-      <p>前台服务与后台播放：用于听力练习时后台持续播放音频，避免切出后声音中断。</p>
-      <p>排行榜头像由系统在本地生成 Emoji 表情表示，不读取相册，也不需要相机权限。</p>
-      <p>本应用不会请求通讯录、精确位置等非必要权限。</p>
-      <div class="divider"></div>
-      <p>Microphone: Used only to capture your pronunciation in real time for on-device analysis during shadowing practice; audio is never saved. Practice features cannot work without it.</p>
-      <p>Speech recognition: Used to transcribe your shadowing pronunciation into text for word-by-word scoring. Both the Android and iOS versions use an on-device offline recognition engine (Vosk); neither the audio nor the recognition results are uploaded.</p>
-      <p>Notifications: Used only for the persistent notification required by the foreground service during listening practice. You can disable them in system settings.</p>
-      <p>Foreground service and background playback: Used to keep audio playing in the background during listening practice, so sound is not interrupted when you switch away from the App.</p>
-      <p>The leaderboard avatar is generated locally as an Emoji and never reads your photo library; no camera permission is requested.</p>
-      <p>The App does not request unnecessary permissions such as contacts or precise location.</p>
-    </section>
+      <section>
+        <h2>四、信息共享 / 4. Information Sharing</h2>
+        <p>我们不会向任何第三方出售、出租或交易您的个人信息。本应用实际涉及的信息范围有限，仅包括：设备标识（在本机用于会员权益校验；参与排行榜或领取奖励时与排行榜匿名 ID 一并上传用于会员权益关联）、本地练习数据（评分与积分记录，仅存于本机）。当您参与云端排行榜时，我们会将匿名 ID、您设置的昵称、Emoji 头像、当周积分以及用于关联会员权益的设备标识上传至我们的云端服务器用于榜单展示、排名计算与奖励发放。该匿名 ID 由系统在本机随机生成，不包含您的真实姓名、联系方式、音频或精确位置；本应用也不会收集您的通讯录、短信等敏感信息。除法律法规明确要求、或经有权机关依法调取外，我们不会向任何第三方披露上述信息。</p>
+        <div class="divider"></div>
+        <p>We do not sell, rent or trade your personal data with any third party. The information involved in this App is limited to: the device identifier (used on-device to validate membership entitlements, and uploaded together with the anonymous leaderboard ID when you take part in the leaderboard or claim rewards, for membership entitlement association) and local practice data (scores and points, stored on-device only). When you take part in the cloud leaderboard, we upload an anonymous ID, the nickname you set, an emoji avatar, your weekly points and the device identifier used to associate membership entitlements to our cloud server for leaderboard display, ranking and reward issuance. The anonymous ID is generated randomly on your device and does not contain your real name, contact information, audio or precise location. The App does not collect your contacts, SMS or other sensitive information. We disclose this information to third parties only when required by applicable law or by a competent authority in accordance with legal process.</p>
+      </section>
 
-    <section>
-      <h2>七、第三方服务 / 7. Third-Party Services</h2>
-      <p>本应用使用以下第三方服务，其数据处理遵循各自的隐私政策：</p>
-      <p>应用商店结算服务：用于处理会员/订阅的购买与续订。iOS 版通过 Apple App Store 结算；如后续通过 Google Play 分发的版本，则通过 Google Play 结算。支付信息由对应商店直接处理，开发者无法获取您的银行卡号或账单地址。</p>
-      <p>内容分发网络（CDN）：用于下载语音识别模型与练习内容数据包。下载请求为公开只读的资源获取，不携带您的个人信息、音频或设备标识。</p>
-      <p>云端排行榜与奖励存储（Cloudflare D1 数据库）：当您参与云端排行榜或领取排行榜奖励时，存储您上传的匿名 ID、昵称、Emoji 头像、当周积分，以及用于关联会员权益的设备标识与奖励发放记录（名次、奖励天数、领取状态），用于榜单展示、排名计算与会员奖励结算，不存储您的任何音频。该等数据处理遵循 Cloudflare 的隐私政策。</p>
-      <p>本地语音识别引擎（Vosk）：Android 版与 iOS 版均完全在您的设备上离线运行，音频不会离开设备。本应用不向自有服务器上传音频或识别结果。</p>
-      <p>屏幕常亮（wakelock_plus）：仅在跟读页面保持屏幕不自动熄灭，离开页面即恢复，不收集任何信息。</p>
-      <p>设备信息（device_info_plus）：仅读取设备型号与系统版本，用于适配界面布局，不收集个人身份信息。</p>
-      <p>网络状态检测（connectivity_plus）：仅判断是否有网络连接，不记录网络内容。</p>
-      <p>本地存储（sqflite / shared_preferences）：练习记录与设置保存在本机，不上传服务器。</p>
-      <p>音频播放与采集（audioplayers / record / flutter_tts）：均在本地完成，音频不上传。</p>
-      <p>文件选择与分享（file_picker / share_plus）：仅在您主动导入语音包、更换头像或分享打卡成果时触发，所选文件仅在本机处理，不上传服务器。</p>
-      <div class="divider"></div>
-      <p>The App uses the following third-party services, each governed by its own privacy policy:</p>
-      <p>App Store Billing: Processes membership/subscription purchases and renewals. The iOS version is billed through Apple's App Store; any future version distributed via Google Play would be billed through Google Play. Payment information is handled directly by the corresponding store; the developer never receives your card number or billing address.</p>
-      <p>Content Delivery Network (CDN): Used to download speech-recognition models and practice content packages. These are public read-only resource requests and carry no personal information, audio, or device identifiers.</p>
-      <p>Cloud leaderboard and reward storage (Cloudflare D1 database): When you take part in the cloud leaderboard or claim leaderboard rewards, we store the anonymous ID, nickname, emoji avatar and weekly points you upload, as well as the device identifier used to associate membership entitlements and the reward records (rank, reward days, claim status), for leaderboard display, ranking and membership reward settlement. No audio is stored. This processing is subject to Cloudflare's privacy policy.</p>
-      <p>On-device speech recognition (Vosk): Both the Android and iOS versions run entirely offline on your device; audio never leaves the device. The App never uploads audio or recognition results to its own servers.</p>
-      <p>Screen wake lock (wakelock_plus): Keeps the screen from sleeping only on the shadowing page and restores it when leaving; it collects no information.</p>
-      <p>Device information (device_info_plus): Reads only the device model and OS version to adapt the interface layout; it does not collect personal identity information.</p>
-      <p>Network connectivity (connectivity_plus): Determines only whether a network connection exists; it does not record network content.</p>
-      <p>Local storage (sqflite / shared_preferences): Practice records and settings are stored on your device and are not uploaded to any server.</p>
-      <p>Audio playback and capture (audioplayers / record / flutter_tts): All run locally; audio is never uploaded.</p>
-      <p>File selection and sharing (file_picker / share_plus): Triggered only when you actively import a voice pack, change your avatar, or share a check-in result. Selected files are processed locally and are never uploaded to any server.</p>
-    </section>
+      <section>
+        <h2>五、数据存储与删除 / 5. Data Storage & Deletion</h2>
+        <p>本应用不保存任何音频文件，音频在实时分析完成后立即释放。我们的服务器不存储您的音频数据。排行榜头像为应用在本地生成的 Emoji 表情，不包含也不会访问您的照片；本地练习数据（评分记录等）保留在您的设备上，直至您在应用内删除或卸载应用。当您参与云端排行榜时，仅将匿名 ID、昵称、Emoji 头像、当周积分与用于关联会员权益的设备标识上传至云端，用于榜单展示、排名与奖励发放；这些数据不含您的姓名、联系方式、音频或精确位置。云端奖励记录（名次、奖励天数、领取状态）与设备标识的绑定关系会保留在服务器上，以便跨设备结算会员奖励。站内消息功能会按设备标识存储系统下发给您的消息标题、正文、阅读状态与创建时间，用于在应用内向您展示通知；您可在应用内「系统消息」页面自行删除单条消息或清空全部消息，删除后服务器不再保留该消息记录。您可随时在应用内停止参与排行榜，之后新的成绩将不再上传；如需处理云端已有的榜单数据与设备标识绑定记录，可联系我们协助，我们将在核实后按您的请求删除。</p>
+        <div class="divider"></div>
+        <p>The App does not save any audio files; audio is released immediately after real-time analysis. No audio data is stored on our servers. The leaderboard avatar is an Emoji generated locally by the App and does not contain or access any of your photos. Local practice data (such as score records) remain on your device until you delete them in the App or uninstall the App. When you take part in the cloud leaderboard, only your anonymous ID, nickname, emoji avatar, weekly points and the device identifier used to associate membership entitlements are uploaded to the cloud, for leaderboard display, ranking and reward issuance; these data do not contain your real name, contact information, audio or precise location. Cloud reward records (rank, reward days, claim status) and their binding to the device identifier are retained on our servers so that membership rewards can be settled across devices. The in-app messaging feature stores, keyed by device identifier, the titles, bodies, read status and creation time of system messages delivered to you, so that notifications can be shown inside the App; you may delete any single message or clear all messages in the App's "System Messages" page, after which the server no longer retains those message records. You may stop taking part in the leaderboard at any time in the App; once you do, new results are no longer uploaded. If you need us to delete cloud-stored leaderboard data or device-identifier bindings, you may contact us and we will assist upon verification.</p>
+      </section>
 
-    <section>
-      <h2>八、儿童隐私 / 8. Children's Privacy</h2>
-      <p>本应用不面向 13 周岁以下儿童，也不会主动收集儿童的个人信息。本应用不保存音频，本地练习数据实时在设备端处理；云端排行榜仅涉及匿名 ID、昵称、Emoji 头像、当周积分，以及用于关联会员权益的设备标识与奖励发放记录，不包含儿童的身份信息、照片或音频。若您是家长或监护人，发现孩子在未经您同意的情况下使用了本应用，可联系我们说明情况，我们会尽力协助处理并回应您的关切。</p>
-      <div class="divider"></div>
-      <p>The App is not directed to children under 13 and does not knowingly collect personal information from children. The App does not save audio, and local practice data is processed on-device in real time. The cloud leaderboard involves only the anonymous ID, nickname, emoji avatar, weekly points, and the device identifier and reward records used to associate membership entitlements; it does not contain children's identity information, photos or audio. If you are a parent or guardian and believe a child has used the App without your consent, please contact us to describe the situation and we will do our best to assist and respond to your concerns.</p>
-    </section>
+      <section>
+        <h2>六、权限说明 / 6. Permissions</h2>
+        <p>麦克风：仅用于跟读练习时实时采集发音并在本机分析，音频不保存；无此权限将无法使用跟读功能。</p>
+        <p>语音识别：用于将您的跟读发音识别为文字以完成逐词评分。Android 版与 iOS 版均使用本地离线识别引擎（Vosk），音频与识别结果均不上传。</p>
+        <p>通知：仅用于听力练习时前台服务所需的常驻通知，可在系统设置中关闭。</p>
+        <p>前台服务与后台播放：用于听力练习时后台持续播放音频，避免切出后声音中断。</p>
+        <p>排行榜头像由系统在本地生成 Emoji 表情表示，不读取相册，也不需要相机权限。</p>
+        <p>本应用不会请求通讯录、精确位置等非必要权限。</p>
+        <div class="divider"></div>
+        <p>Microphone: Used only to capture your pronunciation in real time for on-device analysis during shadowing practice; audio is never saved. Practice features cannot work without it.</p>
+        <p>Speech recognition: Used to transcribe your shadowing pronunciation into text for word-by-word scoring. Both the Android and iOS versions use an on-device offline recognition engine (Vosk); neither the audio nor the recognition results are uploaded.</p>
+        <p>Notifications: Used only for the persistent notification required by the foreground service during listening practice. You can disable them in system settings.</p>
+        <p>Foreground service and background playback: Used to keep audio playing in the background during listening practice, so sound is not interrupted when you switch away from the App.</p>
+        <p>The leaderboard avatar is generated locally as an Emoji and never reads your photo library; no camera permission is requested.</p>
+        <p>The App does not request unnecessary permissions such as contacts or precise location.</p>
+      </section>
 
-    <section>
-      <h2>九、您的权利 / 9. Your Rights</h2>
-      <p>您有权删除本地练习数据与头像设置；有权停止使用本应用；有权就本政策向我们提出疑问或投诉。本地练习数据的删除可直接在您的设备上完成；云端仅保存排行榜匿名数据与用于关联会员权益的设备标识，您可通过本政策末尾的联系方式请求删除，我们将在核实后处理。</p>
-      <div class="divider"></div>
-      <p>You have the right to delete your local practice data and avatar settings, to stop using the App, and to raise questions or complaints about this Policy. Local practice data can be deleted directly on your device; our servers only retain anonymous leaderboard data and the device identifier used to associate membership entitlements, which you may request us to delete via the contact details at the end of this Policy, and we will handle it upon verification.</p>
-    </section>
+      <section>
+        <h2>七、第三方服务 / 7. Third-Party Services</h2>
+        <p>本应用使用以下第三方服务，其数据处理遵循各自的隐私政策：</p>
+        <p>应用商店结算服务：用于处理会员/订阅的购买与续订。iOS 版通过 Apple App Store 结算；如后续通过 Google Play 分发的版本，则通过 Google Play 结算。支付信息由对应商店直接处理，开发者无法获取您的银行卡号或账单地址。</p>
+        <p>内容分发网络（CDN）：用于下载语音识别模型与练习内容数据包。下载请求为公开只读的资源获取，不携带您的个人信息、音频或设备标识。</p>
+        <p>云端排行榜与奖励存储（Cloudflare D1 数据库）：当您参与云端排行榜或领取排行榜奖励时，存储您上传的匿名 ID、昵称、Emoji 头像、当周积分，以及用于关联会员权益的设备标识与奖励发放记录（名次、奖励天数、领取状态），用于榜单展示、排名计算与会员奖励结算，不存储您的任何音频。该等数据处理遵循 Cloudflare 的隐私政策。</p>
+        <p>本地语音识别引擎（Vosk）：Android 版与 iOS 版均完全在您的设备上离线运行，音频不会离开设备。本应用不向自有服务器上传音频或识别结果。</p>
+        <p>屏幕常亮（wakelock_plus）：仅在跟读页面保持屏幕不自动熄灭，离开页面即恢复，不收集任何信息。</p>
+        <p>设备信息（device_info_plus）：仅读取设备型号与系统版本，用于适配界面布局，不收集个人身份信息。</p>
+        <p>网络状态检测（connectivity_plus）：仅判断是否有网络连接，不记录网络内容。</p>
+        <p>本地存储（sqflite / shared_preferences）：练习记录与设置保存在本机，不上传服务器。</p>
+        <p>音频播放与采集（audioplayers / record / flutter_tts）：均在本地完成，音频不上传。</p>
+        <p>文件选择与分享（file_picker / share_plus）：仅在您主动导入语音包、更换头像或分享打卡成果时触发，所选文件仅在本机处理，不上传服务器。</p>
+        <div class="divider"></div>
+        <p>The App uses the following third-party services, each governed by its own privacy policy:</p>
+        <p>App Store Billing: Processes membership/subscription purchases and renewals. The iOS version is billed through Apple's App Store; any future version distributed via Google Play would be billed through Google Play. Payment information is handled directly by the corresponding store; the developer never receives your card number or billing address.</p>
+        <p>Content Delivery Network (CDN): Used to download speech-recognition models and practice content packages. These are public read-only resource requests and carry no personal information, audio, or device identifiers.</p>
+        <p>Cloud leaderboard and reward storage (Cloudflare D1 database): When you take part in the cloud leaderboard or claim leaderboard rewards, we store the anonymous ID, nickname, emoji avatar and weekly points you upload, as well as the device identifier used to associate membership entitlements and the reward records (rank, reward days, claim status), for leaderboard display, ranking and membership reward settlement. No audio is stored. This processing is subject to Cloudflare's privacy policy.</p>
+        <p>On-device speech recognition (Vosk): Both the Android and iOS versions run entirely offline on your device; audio never leaves the device. The App never uploads audio or recognition results to its own servers.</p>
+        <p>Screen wake lock (wakelock_plus): Keeps the screen from sleeping only on the shadowing page and restores it when leaving; it collects no information.</p>
+        <p>Device information (device_info_plus): Reads only the device model and OS version to adapt the interface layout; it does not collect personal identity information.</p>
+        <p>Network connectivity (connectivity_plus): Determines only whether a network connection exists; it does not record network content.</p>
+        <p>Local storage (sqflite / shared_preferences): Practice records and settings are stored on your device and are not uploaded to any server.</p>
+        <p>Audio playback and capture (audioplayers / record / flutter_tts): All run locally; audio is never uploaded.</p>
+        <p>File selection and sharing (file_picker / share_plus): Triggered only when you actively import a voice pack, change your avatar, or share a check-in result. Selected files are processed locally and are never uploaded to any server.</p>
+      </section>
 
-    <section>
-      <h2>十、政策更新 / 10. Policy Updates</h2>
-      <p>本隐私政策可能更新。变更将在应用内展示；若变更涉及重大权利调整，我们会以显著方式提示。继续使用即代表接受更新后的政策。</p>
-      <div class="divider"></div>
-      <p>This Policy may be updated. Changes will be displayed in the App; material changes affecting your rights will be highlighted. Continued use constitutes acceptance of the updated Policy.</p>
-    </section>
+      <section>
+        <h2>八、儿童隐私 / 8. Children's Privacy</h2>
+        <p>本应用不面向 13 周岁以下儿童，也不会主动收集儿童的个人信息。本应用不保存音频，本地练习数据实时在设备端处理；云端排行榜仅涉及匿名 ID、昵称、Emoji 头像、当周积分，以及用于关联会员权益的设备标识与奖励发放记录，不包含儿童的身份信息、照片或音频。若您是家长或监护人，发现孩子在未经您同意的情况下使用了本应用，可联系我们说明情况，我们会尽力协助处理并回应您的关切。</p>
+        <div class="divider"></div>
+        <p>The App is not directed to children under 13 and does not knowingly collect personal information from children. The App does not save audio, and local practice data is processed on-device in real time. The cloud leaderboard involves only the anonymous ID, nickname, emoji avatar, weekly points, and the device identifier and reward records used to associate membership entitlements; it does not contain children's identity information, photos or audio. If you are a parent or guardian and believe a child has used the App without your consent, please contact us to describe the situation and we will do our best to assist and respond to your concerns.</p>
+      </section>
 
-    <section>
-      <h2>十一、联系我们 / 11. Contact Us</h2>
-      <p>如对本隐私政策有任何疑问、意见或投诉，请通过以下方式联系开发者：</p>
-      <p>电子邮件：l445659082@gmail.com</p>
-      <p>开发者：LingMirror 开发者团队</p>
-      <p>响应时间：通常在 7 个工作日内回复</p>
-      <div class="divider"></div>
-      <p>For any questions, concerns or complaints about this Privacy Policy, please contact the developer:</p>
-      <p>Email: l445659082@gmail.com</p>
-      <p>Developer: LingMirror Developer</p>
-      <p>Response time: Usually within 7 business days</p>
-    </section>
+      <section>
+        <h2>九、您的权利 / 9. Your Rights</h2>
+        <p>您有权删除本地练习数据与头像设置；有权停止使用本应用；有权就本政策向我们提出疑问或投诉。本地练习数据的删除可直接在您的设备上完成；云端仅保存排行榜匿名数据与用于关联会员权益的设备标识，您可通过本政策末尾的联系方式请求删除，我们将在核实后处理。</p>
+        <div class="divider"></div>
+        <p>You have the right to delete your local practice data and avatar settings, to stop using the App, and to raise questions or complaints about this Policy. Local practice data can be deleted directly on your device; our servers only retain anonymous leaderboard data and the device identifier used to associate membership entitlements, which you may request us to delete via the contact details at the end of this Policy, and we will handle it upon verification.</p>
+      </section>
 
-    <section>
-      <h2>十二、文本效力 / 12. Precedence</h2>
-      <p>本政策内容与网页版《隐私政策》保持一致，如存在差异，以网页版为准。</p>
-      <div class="divider"></div>
-      <p>This Policy is consistent with the web version of the Privacy Policy. In the event of any discrepancy, the web version prevails.</p>
-    </section>
+      <section>
+        <h2>十、政策更新 / 10. Policy Updates</h2>
+        <p>本隐私政策可能更新。变更将在应用内展示；若变更涉及重大权利调整，我们会以显著方式提示。继续使用即代表接受更新后的政策。</p>
+        <div class="divider"></div>
+        <p>This Policy may be updated. Changes will be displayed in the App; material changes affecting your rights will be highlighted. Continued use constitutes acceptance of the updated Policy.</p>
+      </section>
+
+      <section>
+        <h2>十一、联系我们 / 11. Contact Us</h2>
+        <p>如对本隐私政策有任何疑问、意见或投诉，请通过以下方式联系开发者：</p>
+        <p>电子邮件：l445659082@gmail.com</p>
+        <p>开发者：LingMirror 开发者团队</p>
+        <p>响应时间：通常在 7 个工作日内回复</p>
+        <div class="divider"></div>
+        <p>For any questions, concerns or complaints about this Privacy Policy, please contact the developer:</p>
+        <p>Email: l445659082@gmail.com</p>
+        <p>Developer: LingMirror Developer</p>
+        <p>Response time: Usually within 7 business days</p>
+      </section>
+
+      <section>
+        <h2>十二、文本效力 / 12. Precedence</h2>
+        <p>本政策内容与网页版《隐私政策》保持一致，如存在差异，以网页版为准。</p>
+        <div class="divider"></div>
+        <p>This Policy is consistent with the web version of the Privacy Policy. In the event of any discrepancy, the web version prevails.</p>
+      </section>
+    </div>
+
+    <!-- ================= 用户协议 / User Agreement ================= -->
+    <div class="doc" id="agreement">
+      <h1>用户协议 / User Agreement</h1>
+
+      <section>
+        <h2>一、服务说明 / 1. Service Description</h2>
+        <p>欢迎使用 LingMirror（下称"本应用"）。本应用为语音演讲练习辅助工具，语音分析优先在本地设备执行，音频默认不上传服务器；Android 版与 iOS 版的语音识别均使用本地离线引擎（Vosk），音频与识别结果均不上传。使用本应用即代表您同意遵守本用户协议。如您不同意本协议任何条款，请停止使用本应用。</p>
+        <div class="divider"></div>
+        <p>Welcome to LingMirror (hereinafter referred to as "the App"). The App is an auxiliary tool for speech practice. Speech analysis is performed on your device by default and audio is not uploaded to servers by default; speech recognition runs fully offline on both the Android and iOS versions using an on-device engine (Vosk), and neither the audio nor the recognition results are uploaded. By using the App, you agree to abide by this User Agreement. If you do not agree with any terms herein, please stop using the App.</p>
+      </section>
+
+      <section>
+        <h2>二、用户责任 / 2. User Responsibilities</h2>
+        <ul>
+          <li>1. 若您位于中国大陆境内，应遵守中华人民共和国法律法规；若您位于其他法域，应遵守您所在地的适用法律。在任何情况下，您均应遵守获取本应用所在应用商店的条款与政策；不得利用本应用录制、传播违法、暴力、色情、诽谤或侵犯他人权益的内容。</li>
+          <li>2. 在法律允许的最大范围内，用户对其录制的全部音频、文字内容负责。</li>
+          <li>3. 不得逆向工程、反编译、破解本应用，不得以任何未经授权的方式获取或分发受限功能。</li>
+          <li>4. 您个人信息的收集与处理适用本应用《隐私政策》，该政策构成本协议不可分割的组成部分。就个人信息保护事项，如本协议与《隐私政策》存在不一致，以《隐私政策》为准。</li>
+        </ul>
+        <div class="divider"></div>
+        <ul class="en">
+          <li>1. If you are located in the mainland of the People's Republic of China, you shall comply with the laws and regulations of the People's Republic of China. If you are located in any other jurisdiction, you shall comply with the applicable local laws. In all cases, you shall comply with the terms and policies of the app store from which you obtained the App. You shall not use the App to record or distribute unlawful, violent, pornographic, defamatory or infringing content.</li>
+          <li>2. To the maximum extent permitted by law, you are responsible for all audio and text content you record.</li>
+          <li>3. You shall not reverse engineer, decompile or crack the App, nor obtain or distribute restricted features in any unauthorized manner.</li>
+          <li>4. The collection and processing of your personal information is governed by the App's Privacy Policy, which forms an integral part of this Agreement. With respect to personal information protection, the Privacy Policy shall prevail in the event of any inconsistency with this Agreement.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>三、知识产权 / 3. Intellectual Property</h2>
+        <p>本应用的代码、界面、文字、图标、算法模型的知识产权归开发者所有。未经书面许可，任何人不得复制、二次分发、修改或用于商业用途。用户在本应用内生成的演讲文本、录音文件，知识产权归用户本人所有。</p>
+        <div class="divider"></div>
+        <p>Intellectual property rights of the App's source code, UI, text, icons and algorithm models belong to the developer. No copying, redistribution, modification or commercial use is allowed without written permission. The intellectual property of speech texts and audio recordings generated by you within the App belongs to you.</p>
+      </section>
+
+      <section>
+        <h2>四、付费与订阅 / 4. Payment & Subscription</h2>
+        <p>部分高级功能需通过应用内订阅或一次性购买解锁，具体价格与权益以应用商店页面和 App 内购买页面展示为准。一次订阅的优惠服务仅限本人使用，不可转让或用于转售，退订/退款按应用商店相关规定执行。在未接入应用商店结算的分发渠道中，本应用首次安装后可免费试用 7 天，试用期结束后高级功能将受限，您可通过参加排行榜并领取排名奖励等方式获得会员时长；该试用与奖励机制不影响您在应用商店渠道已购买的权益。</p>
+        <div class="divider"></div>
+        <p>Some advanced features require an in-app subscription or one-time purchase to unlock. Specific prices and entitlements are subject to the app store listing and the in-app purchase page. A subscription benefits only the subscriber and may not be transferred or resold. Cancellation and refunds follow the app store's relevant policies. In distribution channels that do not integrate app-store billing, the App offers a 7-day free trial after first installation; advanced features are restricted once the trial ends, and you may obtain membership time by taking part in the leaderboard and claiming ranking rewards. This trial and reward mechanism does not affect entitlements already purchased through app-store channels.</p>
+      </section>
+
+      <section>
+        <h2>五、免责声明 / 5. Disclaimer</h2>
+        <p>本应用仅作为演讲练习辅助工具，不构成专业心理咨询、医疗、职业培训或法律意见。因用户自身操作、网络、设备故障带来的数据丢失，开发者不承担赔偿责任。</p>
+        <div class="divider"></div>
+        <p>The App is only a speech practice aid and does not constitute professional psychological counseling, medical service, career coaching or legal advice. The developer shall not be liable for data loss caused by user operation, network or device failure.</p>
+      </section>
+
+      <section>
+        <h2>六、协议更新 / 6. Agreement Update</h2>
+        <p>开发者有权更新本协议，更新后会在应用内展示。继续使用代表接受更新后的协议。</p>
+        <div class="divider"></div>
+        <p>The developer reserves the right to update this Agreement. Updates will be displayed inside the App. Continued use means acceptance of the updated Agreement.</p>
+      </section>
+
+      <section>
+        <h2>七、文本效力 / 7. Precedence</h2>
+        <p>本协议以应用内展示的中英文版本为准，两种语言版本如有歧义，以中文版本为准。</p>
+        <div class="divider"></div>
+        <p>This Agreement is governed by the Chinese and English versions displayed within the App. In case of any ambiguity between the two language versions, the Chinese version shall prevail.</p>
+      </section>
+    </div>
+
+    <!-- ================= 商用授权 / Commercial Licensing ================= -->
+    <div class="doc" id="commercial">
+      <h1>商用授权说明 / Commercial Licensing</h1>
+
+      <section>
+        <h2>一、适用范围 / 1. Scope</h2>
+        <p>本说明适用于 LingMirror（下称"本应用"）内置的内容、字体与音频资源，以及面向合作创作者（主播 / 讲师）的定制教学包授权，供个人学习、机构采购与商用合作时查阅。</p>
+        <div class="divider"></div>
+        <p>This notice covers the content, fonts and audio assets bundled with LingMirror (the "App"), as well as the customization pack licensing offered to partner creators (coaches / instructors), for personal study, institutional procurement and commercial cooperation.</p>
+      </section>
+
+      <section>
+        <h2>二、内置字体 / 2. Bundled Fonts</h2>
+        <p>本应用内置字体均为可免费商用的开源字体：</p>
+        <ul>
+          <li>小米 MiSans（小米开源字体，可免费商用）</li>
+          <li>思源黑体 / Noto Sans SC（SIL Open Font License 1.1）</li>
+          <li>站酷快乐体 / ZCOOL KuaiLe（站酷免费商用字体）</li>
+        </ul>
+        <p>上述字体遵循各自的开源许可协议，可随本应用一并分发；如需单独提取字体文件用于其它产品，请遵守对应许可协议（如 OFL 要求保留版权声明）。</p>
+        <div class="divider"></div>
+        <p>All fonts bundled with the App are free-for-commercial-use open-source fonts:</p>
+        <ul class="en">
+          <li>MiSans (Xiaomi open-source font, free for commercial use)</li>
+          <li>Noto Sans SC (SIL Open Font License 1.1)</li>
+          <li>ZCOOL KuaiLe (ZCOOL free-for-commercial-use font)</li>
+        </ul>
+        <p>The fonts are governed by their respective open-source licenses and may be distributed together with the App. If you extract the font files for use in other products, please comply with the corresponding license (e.g. the OFL requires retaining copyright notices).</p>
+      </section>
+
+      <section>
+        <h2>三、应用本身 / 3. The Application</h2>
+        <p>本应用的代码、界面、文字、图标与算法模型的知识产权归开发者所有。未经书面许可，不得复制、二次分发、修改或用于商业用途。个人在应用商店购买会员或订阅，仅获得本人使用相应功能的权利，不构成对本应用任何商业使用许可。</p>
+        <div class="divider"></div>
+        <p>Intellectual property rights of the App's code, UI, text, icons and algorithm models belong to the developer. No copying, redistribution, modification or commercial use is permitted without written permission. Purchasing a membership or subscription in the app store grants only the right to use the corresponding features personally and does not constitute any commercial license to the App itself.</p>
+      </section>
+
+      <section>
+        <h2>四、合作创作者定制教学包 / 4. Customization Packs for Partner Creators</h2>
+        <p>本应用为口语老师、主播等合作创作者提供定制教学包导入能力：创作者可自行准备教材内容与音频，打包成本应用可识别的定制教学包，经后台设备授权后导入本机使用。相关约定如下：</p>
+        <p class="sub">授权与设备绑定</p>
+        <ul>
+          <li>定制教学包的使用权限以开发者后台的设备白名单为准：合作者需先按 App 外（邮件 / 表单）渠道报备设备 ID，后台放行后方可导入，未放行时导入会被拒绝。</li>
+          <li>设备 ID 在本机生成并做完整性校验，用于识别同一台设备；授权有效期内该设备可随时导入已授权的定制包，无需重复报备。</li>
+          <li>授权可能因到期、吊销或停用而失效，届时定制包导入与相关功能将停止放行。</li>
+        </ul>
+        <p class="sub">内容与责任</p>
+        <ul>
+          <li>定制教学包内的教材文字、音频等内容由合作创作者自行提供，其版权与合法性由创作者自负；合作者应确保已取得文字、音频等素材的合法授权，不得上传侵权或违法内容。</li>
+          <li>定制包仅保存在导入设备的本机目录，不上传开发者服务器。</li>
+          <li>定制语音包（含定制教材与音频）仅限合作者本人在授权设备上用于教学分享，不得以收费方式转让、转售或向第三方再次分发。</li>
+        </ul>
+        <div class="divider"></div>
+        <p>The App supports importing customization packs for partner creators such as speaking coaches and instructors: creators may prepare their own teaching materials and audio, package them into a customization pack recognized by the App, and after backend device authorization import them for local use. The terms are as follows:</p>
+        <p class="sub en">Authorization and device binding</p>
+        <ul class="en">
+          <li>Permission to use a customization pack is subject to the developer's backend device allowlist: partners must first report their Device ID through out-of-app channels (email / form); imports are permitted only after the backend approves the device, and are rejected otherwise.</li>
+          <li>The Device ID is generated on-device with integrity verification to identify the same device. While the authorization remains valid, the device may import authorized packs at any time without reporting again.</li>
+          <li>Authorization may lapse due to expiry, revocation or suspension, after which imports of customization packs and related features will no longer be permitted.</li>
+        </ul>
+        <p class="sub en">Content and responsibility</p>
+        <ul class="en">
+          <li>Text, audio and other content inside customization packs are provided by the partner creator, who bears sole responsibility for their copyright and legality; partners must ensure they hold lawful rights to all such materials and must not upload infringing or unlawful content.</li>
+          <li>Customization packs are stored only in the local directory of the importing device and are never uploaded to the developer's servers.</li>
+          <li>Customization packs (including custom materials and audio) may be used by the partner only for teaching and sharing on authorized devices, and may not be transferred, resold for a fee, or further distributed to third parties.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>五、第三方开源组件 / 5. Third-Party Open-Source Components</h2>
+        <p>本应用使用的第三方开源库及其许可协议，可在 App 内「关于 - 第三方开源库声明」中完整查看，均按其原有开源许可（如 MIT / BSD / Apache-2.0 / OFL）使用与分发。</p>
+        <div class="divider"></div>
+        <p>The third-party open-source libraries used by the App and their licenses are fully listed in the App under "About - Third-party Open Source Notices", and are used and distributed under their respective licenses (e.g. MIT / BSD / Apache-2.0 / OFL).</p>
+      </section>
+
+      <section>
+        <h2>六、联系方式 / 6. Contact</h2>
+        <p>如需商用授权、定制教学包合作或授权咨询，请联系开发者：</p>
+        <p>电子邮件：l445659082@gmail.com</p>
+        <p>响应时间：通常在 7 个工作日内回复</p>
+        <div class="divider"></div>
+        <p>For commercial licensing, customization-pack cooperation or authorization enquiries, please contact the developer:</p>
+        <p>Email: l445659082@gmail.com</p>
+        <p>Response time: Usually within 7 business days</p>
+      </section>
+    </div>
 
   </div>
 </body>

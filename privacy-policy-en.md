@@ -1,6 +1,6 @@
 # Privacy Policy
 
-LingMirror (hereinafter referred to as the "App") is a mobile language learning application that prioritizes local offline processing to minimize personal data uploads. This policy explains how we collect, use, and store your information.
+LingMirror (hereinafter referred to as the "App") is a mobile language learning application that prioritizes local offline processing to minimize personal data uploads. **The App requires no account registration and does not collect registration information such as your name, phone number or email address.** This policy explains how we collect, use, and store your information.
 
 Effective: 2026-11-05 · Updated: 2026-11-17
 
@@ -45,19 +45,21 @@ The App does not save any audio files; audio is released immediately after real-
 
 6.2 **CDN (Content Delivery Network)**: Used for downloading speech recognition models and practice content packages. This is publicly read-only resource retrieval that does not carry your personal information, recordings, or device identifier.
 
-6.2a **Cloud leaderboard and reward storage (Cloudflare D1 database)**: When you take part in the cloud leaderboard or claim leaderboard rewards, we store the anonymous ID, nickname, emoji avatar and weekly points you upload, as well as the device identifier used to associate membership entitlements and the reward records (rank, reward days, claim status), for leaderboard display, ranking and membership reward settlement. No audio is stored. This processing is subject to Cloudflare's privacy policy.
+6.3 **Cloud leaderboard and reward storage (Cloudflare D1 database)**: When you take part in the cloud leaderboard or claim leaderboard rewards, we store the anonymous ID, nickname, emoji avatar and weekly points you upload, as well as the device identifier used to associate membership entitlements and the reward records (rank, reward days, claim status), for leaderboard display, ranking and membership reward settlement. No audio is stored. This processing is subject to Cloudflare's privacy policy.
 
-6.3 **Vosk (on-device speech recognition engine)**: Both the Android and iOS versions run entirely offline on your device; audio never leaves the device.
+6.4 **Vosk (on-device speech recognition engine)**: Both the Android and iOS versions run entirely offline on your device; audio never leaves the device.
 
-6.4 **device_info_plus**: Reads only device model and OS version for UI layout adaptation; does not collect personally identifiable information.
+6.5 **Screen wake lock (wakelock_plus)**: Keeps the screen from sleeping only on the shadowing page and restores it when leaving; it collects no information.
 
-6.5 **connectivity_plus**: Checks only network connection status; does not record network content.
+6.6 **device_info_plus**: Reads only device model and OS version for UI layout adaptation; does not collect personally identifiable information.
 
-6.6 **Local storage (sqflite / shared_preferences)**: Practice records and settings are stored locally on your device; not uploaded to servers.
+6.7 **connectivity_plus**: Checks only network connection status; does not record network content.
 
-6.7 **Audio playback and recording (audioplayers / record / flutter_tts)**: All processed locally; audio is not uploaded.
+6.8 **Local storage (sqflite / shared_preferences)**: Practice records and settings are stored locally on your device; not uploaded to servers.
 
-6.8 **File picker and share (file_picker / share_plus)**: Triggered only when you actively import a voice pack, change your avatar, or share a check-in result. Selected files are processed locally and are never uploaded to any server.
+6.9 **Audio playback and recording (audioplayers / record / flutter_tts)**: All processed locally; audio is not uploaded.
+
+6.10 **File picker and share (file_picker / share_plus)**: Triggered only when you actively import a voice pack, change your avatar, or share a check-in result. Selected files are processed locally and are never uploaded to any server.
 
 ## 7. Children's Privacy
 
