@@ -6,7 +6,7 @@ Effective: 2026-11-05 · Updated: 2026-11-17
 
 ## 1. Information We Collect
 
-1.1 **Audio recordings**: Microphone audio is captured in real time only when you start a shadowing practice. The audio is held in memory solely for real-time analysis and is released immediately once analysis completes — never saved, never uploaded.
+1.1 **Audio recordings**: Microphone audio is captured in real time only when you start a shadowing practice. The audio is held in memory solely for real-time analysis and is released immediately once analysis completes — never saved as a file, and never automatically uploaded to any server.
 
 1.2 **Device identifier**: Read from the app-scoped identifier provided by the system (identifierForVendor on iOS, ANDROID_ID on Android), or generated locally at random if the system does not provide one. It normally stays on your device and is compared locally to validate membership status and membership entitlements. When you take part in the cloud leaderboard or claim leaderboard rewards, the App uploads the device identifier together with your anonymous leaderboard ID to our cloud server, solely to associate your leaderboard rank with your device so that membership rewards can be granted to that device. Apart from these cases the identifier is not uploaded and is not shared with any third party. In addition, when you voluntarily copy and report the Device ID, you provide it to us for membership verification.
 
@@ -80,3 +80,7 @@ For any questions, concerns or complaints about this Privacy Policy, please cont
 - Email: l445659082@gmail.com
 - Developer: LingMirror Developer
 - Response time: Usually within 7 business days
+
+## 11. Precedence
+
+This Policy is consistent with the web version of the Privacy Policy. In the event of any discrepancy, the web version prevails.
