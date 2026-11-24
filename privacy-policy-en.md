@@ -2,7 +2,7 @@
 
 LingMirror (hereinafter referred to as the "App") is a mobile language learning application that prioritizes local offline processing to minimize personal data uploads. **The App requires no account registration and does not collect registration information such as your name, phone number or email address.** This policy explains how we collect, use, and store your information.
 
-Effective: 2026-11-05 · Updated: 2026-11-17
+Effective: 2026-11-05 · Updated: 2026-11-24
 
 ## 1. Information We Collect
 
